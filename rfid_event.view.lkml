@@ -6,7 +6,7 @@ view: rfid_event {
     sql: ${TABLE}.arrived ;;
     link: {
       label: "Google"
-      url: "http://www.google.com/search?q={{ value }}"
+      url: "http://localhost:9290/customer?q={{ value }}"
       icon_url: "https://looker.com/favicon.ico"
     }
   }
