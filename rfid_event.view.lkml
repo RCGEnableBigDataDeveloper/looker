@@ -4,6 +4,11 @@ view: rfid_event {
   dimension: arrived {
     type: number
     sql: ${TABLE}.arrived ;;
+    link: {
+      label: "Filter by {{ asn_id | epc }}"
+      url: "filter::q={{ asn_id | epc }}"
+      icon_url: "https://google.com/favicon.ico"
+    }
   }
 
   dimension: asn_id {
