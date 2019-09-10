@@ -5,9 +5,9 @@ view: rfid_event {
     type: number
     sql: ${TABLE}.arrived ;;
     link: {
-      label: "Filter by {{ asn_id | epc }}"
-      url: "filter::q={{ asn_id | epc }}"
-      icon_url: "https://google.com/favicon.ico"
+      label: "Google"
+      url: "http://www.google.com/search?q={{ value }}"
+      icon_url: "https://looker.com/favicon.ico"
     }
   }
 
