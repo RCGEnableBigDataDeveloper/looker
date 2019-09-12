@@ -1,9 +1,9 @@
 view: rfid_event {
   sql_table_name: rcg_big_data.rfid_event ;;
 
-  dimension: arrived {
+  dimension: id {
     type: number
-    sql: ${TABLE}.arrived ;;
+    sql: ${TABLE}.id ;;
     link: {
       label: "Details"
       url: "http://localhost:9290/customer?q={{ value }}"
