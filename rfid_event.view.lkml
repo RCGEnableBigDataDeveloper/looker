@@ -6,7 +6,7 @@ view: rfid_event {
     sql: ${TABLE}.id ;;
     link: {
       label: "Details"
-      url: "http://localhost:9290/customer?q={{ value }}"
+      url: "http://localhost:9290/customer?q={{ value }};r={{ rfid_event.asn_id._value }}"
       icon_url: "https://looker.com/favicon.ico"
     }
   }
