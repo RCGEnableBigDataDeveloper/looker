@@ -6,7 +6,7 @@ view: rfid_event {
     sql: ${TABLE}.id ;;
     link: {
       label: "Details"
-      url: "https://localhost:9998/map?q={{ value }}&asn={{ rfid_event.asn_id._value }}&e={{ rfid_event.event._value }}&f={{ rfid_event.facility_id._value }}"
+      url: "https://localhost:9998/customer?q={{ value }}&asn={{ rfid_event.asn_id._value }}&e={{ rfid_event.event._value }}&f={{ rfid_event.facility_id._value }}"
     }
   }
 
@@ -76,7 +76,7 @@ view: rfid_event {
     sql_longitude:${lng} ;;
     link: {
       label: "Details"
-      url: "https://localhost:9998/customer?q={{ value }}&asn={{ rfid_event.asn_id._value }}&e={{ rfid_event.event._value }}&f={{ rfid_event.facility_id._value }}"
+      url: "https://localhost:9998/map?q={{ location }}&asn={{ rfid_event.asn_id._value }}&e={{ rfid_event.event._value }}&f={{ rfid_event.facility_id._value }}"
       icon_url: "https://looker.com/favicon.ico"
     }
   }
