@@ -26,7 +26,7 @@ view: rfid_event {
     sql: ${TABLE}.encode_format ;;
   }
 
-  dimension: epc {
+  dimension: HOSPITAL {
     type: number
     sql: ${TABLE}.epc ;;
   }
