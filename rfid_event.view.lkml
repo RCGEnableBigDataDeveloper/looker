@@ -28,6 +28,7 @@ view: rfid_event {
 
   dimension: epc {
     type: number
+    label: "hospital"
     sql: ${TABLE}.epc ;;
   }
 
