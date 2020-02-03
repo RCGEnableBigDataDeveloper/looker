@@ -31,7 +31,7 @@ view: rfid_event {
     sql: ${TABLE}.epc ;;
   }
 
-  dimension: epc_state {
+  dimension: epcState {
     type: string
     sql: ${TABLE}.epcState ;;
   }
