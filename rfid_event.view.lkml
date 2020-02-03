@@ -23,12 +23,13 @@ view: rfid_event {
 
   dimension: encode_format {
     type: string
+    label: "Hospital"
     sql: ${TABLE}.encode_format ;;
   }
 
   dimension: epc {
     type: number
-    label: "hospital"
+    label: "Event Code"
     sql: ${TABLE}.epc ;;
   }
 
